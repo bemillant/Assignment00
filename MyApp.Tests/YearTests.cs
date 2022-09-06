@@ -119,7 +119,7 @@ public class YearTests
 
         // Assert
          var output = writer.GetStringBuilder().ToString().TrimEnd();
-         output.Should().Be("Please enter a year! (That is a year as a single number higher than 1581)");
+         output.Should().Be("Please enter a year! (That is, a year as a single number higher than 1581)");
     }
 
 
