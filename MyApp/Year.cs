@@ -20,15 +20,16 @@ public class Year{
     }
 
     public void isInputLeapYear(String year){
-        var y = int.Parse(year);
-        if (isLeapYear(y))
-        {
-            Console.WriteLine("Yay");
-        }else{
-            Console.WriteLine("Nay");
+        int number;
+        if (!int.TryParse(year, out number)){
+            Console.WriteLine("Please enter a year!");
+        }else {
+            if (isLeapYear(number)){
+                Console.WriteLine("Yay");
+            }else{
+                Console.WriteLine("Nay");
+            }
         }
-
-
     }
 
 
