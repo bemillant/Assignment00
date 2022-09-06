@@ -20,7 +20,6 @@ public class Year{
 
     public bool isLeapYearWithinRange(int year){
          if (year < 1582){
-            //Console.WriteLine("Please enter a year after 1582, to check for leap year!");
             return false;
         }else return true;
     }
@@ -28,7 +27,7 @@ public class Year{
     public void isInputLeapYear(String year){
         int number;
         if (!int.TryParse(year, out number)){
-            Console.WriteLine("Please enter a year! (That is a year as a single number higher than 1581)");
+            Console.WriteLine("Please enter a year! (That is, a year as a single number higher than 1581)");
         }else {
             if (isLeapYear(number) && isLeapYearWithinRange(number)){
                 Console.WriteLine("Yay");
